@@ -1,0 +1,11 @@
+package com.example.residentialproperty.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class PropertyZone {
+	
+	private int zoneId;
+	
+    private String zone;
+}

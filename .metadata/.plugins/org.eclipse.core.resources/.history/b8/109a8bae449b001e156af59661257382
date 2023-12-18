@@ -1,0 +1,14 @@
+package com.example.residentialproperty.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class PropertyCategory { 
+	
+	@Id
+	private int categoryId;
+	
+	private String description;
+
+}

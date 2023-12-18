@@ -1,0 +1,12 @@
+package com.example.residentialproperty.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.residentialproperty.service.ResidentialPropertyService;
+
+@RestController
+public class ResidentialPropertyController {
+	
+	private ResidentialPropertyService residentialPropertyService;
+	
+}

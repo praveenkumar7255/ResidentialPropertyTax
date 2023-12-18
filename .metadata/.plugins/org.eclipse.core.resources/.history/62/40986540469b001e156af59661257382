@@ -1,0 +1,28 @@
+package com.example.residentialproperty.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+@Entity
+public class PropertyTaxValueDetails {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int propertyId;
+	
+	@ManyToOne
+    @JoinColumn(name="categoryId")
+	private PropertyCategory propertyCategory;
+	
+	@ManyToOne
+    @JoinColumn(name="statusId")
+	private PropertyStatus propertyStatus;
+	
+	@ManyToOne
+    @JoinColumn(name="zoneId")
+	private PropertyZone propertyZone;
+}

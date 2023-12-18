@@ -1,0 +1,6 @@
+package com.example.residentialproperty.entity;
+
+
+public class AssessmentPropertyTax {
+
+}

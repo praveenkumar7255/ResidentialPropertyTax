@@ -1,0 +1,13 @@
+package com.example.residentialproperty.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class PropertyStatus {
+	
+	@Id
+	private int statusId;
+	
+	private String status;
+
+}
